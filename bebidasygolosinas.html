@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>U MARKET</title>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar-top">
+            <ul class="navbar-top-ul">
+                <li class="navbar-top-item">
+                    <a href="login.html" class="navbar-top-links">Registro</a> 
+                </li>
+                <li class="navbar-top-item">
+                    <a href="login.html" class="navbar-top-links">Iniciar sesión</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="#" class="navbar-top-links">
+                        <i class="zmdi zmdi-shopping-cart"></i> Carrito
+                        <!-- <i class="zmdi zmdi-chevron-down"></i> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+                <a class="navbar-mobile-link has-text-white" href="#" id="btn-mobile"><i class="zmdi zmdi-menu"></i></a>
+                <a class="navbar-mobile-link has-text-white" href="menu.html">U MARKET</a>
+                <a class="navbar-mobile-link has-text-white" href="#"><i class="zmdi zmdi-shopping-cart"></i> Vacio</a>
+            </header>
+            <nav class="nav-menu --nav-dark-light" id="mySidenav">
+                <form class="form-group " action="#">
+                    <div class="form-group-container">
+                        <span class="form-group-icon"><i class="zmdi zmdi-search"></i></span>
+                        <input type="text" class="form-group-input" placeholder="Buscar...">
+                    </div>
+                </form>
+
+                <a class="is-hidden-mobile brand is-uppercase has-text-weight-bold has-text-dark" href="menu.html">U MARKET</a>
+                <ul class="nav-menu-ul">
+                    <li class="nav-menu-item" id="men">
+                        <a class="nav-menu-link link-submenu active" href="#">Hombre <i
+                                class="zmdi zmdi-chevron-down"></i></a>
+                        <div class="container-sub-menu">
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item ">
+                                    <a class="nav-menu-link" href="#">
+                                        <strong>Casual</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a>
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Chaquetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisas Polo</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Pantalones</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisetas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item"><a class="nav-menu-link" href="#">
+                                        <strong>Formal</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a>
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Chaquetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Trajes</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Pantalones</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="ads is-hidden-touch">
+                                <h1 class="ads-h1">Ofertas de Verano</h1>
+                                <h2 class="ads-h2">Desde el 50% de descuento</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-menu-item" id="women">
+                        <a href="#" class="nav-menu-link link-submenu">Mujer <i class="zmdi zmdi-chevron-down"></i> </a>
+                        <div class="container-sub-menu">
+
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item ">
+                                    <a class="nav-menu-link" href="#">
+                                        <strong>Casual</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a>
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Chaquetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisas Polo</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Pantalones</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisetas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item"><a class="nav-menu-link" href="#">
+                                        <strong>Formal</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a>
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Chaquetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Trajes</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Pantalones</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="ads is-hidden-touch">
+                                <h1 class="ads-h1">Ofertas de Verano</h1>
+                                <h2 class="ads-h2">Desde el 50% de descuento</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-menu-item"><a href="brand.html" class="nav-menu-link">La Marca</a></li>
+                    <li class="nav-menu-item"><a href="lookbook.html" class="nav-menu-link"></a></li>
+                    <li class="nav-menu-item"><a href="login.html" class="nav-menu-link">Registro</a></li>
+                    <li class="nav-menu-item"><a href="lookbook.html" class="nav-menu-link">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner banner-bebidas">
+        <div class="banner-container ">
+            <b><i><h1>BEBIDAS Y GOLOSINAS</h1></i></b>
+            
+        </div>
+    </div>
+ <!-- Sección de fotografías -->
+ <div class="container">
+    <div class="columns is-multiline">
+        <div class="column is-full-mobile">
+            <div class="columns is-centered is-mobile is-multiline">
+                <!-- 1 Sección de fotografías -->
+                <div class="column is-half column-full">
+                    <div class="card">
+                        <span class="price">Lps.32.99</span>
+                        <img src="img/coca1.5.jpg" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> COCA COLA 1.5 LITROS </h4></i></b> 
+                           <i> <p class="has-text-centered">Harina LA ROSA dale el sazón a tus empanada, tortillas 
+                                de harina y mucho más con Harina LA ROSA
+                                </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.17.58</span>
+                        <img src="img/cocadepiña.jpg" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> COCA COLA DE PIÑA MEDIO LITRO</h4></i></b> 
+                            <i> <p class="has-text-centered">Refrescate en un día soleado con la nueva Coca Cola de piña!!!
+                                </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full">
+                    <div class="card">
+                        
+                        <span class="price">Lps.17.05</span>
+                        
+                            <img src="img/coca600ml.jpg" alt="">
+                        <div class="card-info">
+                            
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold">COCA COLA 600ml</h4></i></b> 
+                            <i><p class="has-text-centered"> “Destapa la Felicidad”</p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Segunda sección de fotografías -->
+        <div class="column is-half is-full-mobile">
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-full">
+                    <div class="card">
+                        <span class="price">Lps.27.00</span>
+                            <img src="img/tropical1.1.webp" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> TROPICAL UVA 1.1 LITRO</h4></i></b> 
+                            <i><p class="has-text-centered"> “Destapa la Felicidad”
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.47.13</span>
+                        <img src="img/tropical3litrosbanana.webp" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> TROPICAL BANANA 3 LITROS
+                                
+                            </h4></i></b> 
+                           <i> <p class="has-text-centered">
+                            “Destapa la Felicidad”</p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                <a href="producto.html" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- 3 Sección de fotografías -->
+ <div class="container">
+    <div class="columns is-multiline">
+        <div class="column is-full-mobile">
+            <div class="columns is-centered is-mobile is-multiline">
+                <!-- 3 Sección de fotografías -->
+                <div class="column is-half column-full">
+                    <div class="card">
+                        <span class="price">Lps.15.05</span>
+                        <img src="img/canadadry500ml.webp" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> CANADÁ DRY 500ml </h4></i></b> 
+                            <i><p class="has-text-centered">Canadá Dry para refrescarte el día. 
+                                </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.06.82</span>
+                        <img src="img/taqueritos.jpg" alt="">
+                        <div class="card-info">
+                           
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> TAQUERITOS </h4></i></b> 
+                            <i><p class="has-text-centered">Con chile toreado.</p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full">
+                    <div class="card">
+                        
+                        <span class="price">Lps.05.00</span>
+                        
+                            <img src="img/galletaoreo.jpg" alt="">
+                        <div class="card-info">
+                           
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> GALLETAS OREO UNIDAD </h4></i></b> 
+                           <i> <p class="has-text-centered">Tu OREO de siempre ahora más grande.
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Segunda sección de fotografías -->
+        <div class="column is-half is-full-mobile">
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-full">
+                    <div class="card">
+                        <span class="price">Lps.18.00</span>
+                            <img src="img/m&mchocolate.webp" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> M&M CHOCOLATE Y LECHE</h4></i></b> 
+                           <i> <p class="has-text-centered">Rico chocolate con cacahuate.</p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.06.00</span>
+                        <img src="img/zambo.jpg" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> ARROZ ORIGINAL RICE </h4></i></b> 
+                            <i><p class="has-text-centered">Picositas con Chile, Limón y Sal.</p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- 4 Sección de fotografías -->
+ <div class="container">
+    <div class="columns is-multiline">
+        <div class="column is-full-mobile">
+            <div class="columns is-centered is-mobile is-multiline">
+                <!-- 4 Sección de fotografías -->
+                <div class="column is-half column-full">
+                    <div class="card">
+                        <span class="price">Lps.03.00</span>
+                        <img src="img/nucita.jpg" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> DULCE NUCITA UNIDAD </h4></i></b> 
+                            <p class="has-text-centered">Cómetela como quieras!
+                                </p>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.07.00</span>
+                        <img src="img/yummixtropical.jpg" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> YUMMIX TROPICAL</h4></i></b> 
+                            <p class="has-text-centered">¡Tres sabores para tu antojo!</p>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full">
+                    <div class="card">
+                        
+                        <span class="price">Lps.07.00</span>
+                        
+                            <img src="img/yummixrojo.jpg" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> YUMIX TROPICAL PICOSITOS</h4></i></b> 
+                            <p class="has-text-centered">¡Tres sabores para tu antojo!
+                                cotton.</p>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Segunda sección de fotografías -->
+        <div class="column is-half is-full-mobile">
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-full">
+                    <div class="card">
+                        <span class="price">Lps.150.00</span>
+                            <img src="img/salvavida.webp" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> CERVEZA SALVAVIDA SIX PACK 16OZ</h4></i></b> 
+                            <p class="has-text-centered">Orgullo que nos une desde 1916.</p>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.148.00</span>
+                        <img src="img/barena.webp" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> CERVEZA BARENA SIX PACK</h4></i></b> 
+                            <p class="has-text-centered">¡Escápate con su sabor!</p>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-full">
+<div class="columns is-centered is-multiline">
+    <div class="column is-full">
+        <div class="separator"></div>
+
+   
+            
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Información</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">La marca</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Local stores</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Servicios </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Porqué comprar</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Envios y retornos</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Envios seguros</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Testimonios </a></li>
+                       
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Tu cuenta</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Iniciar sesión</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Registro</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver carrito </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver catálogo</a></li>
+                      
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Catalogo</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para hombres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para mujeres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver tu Catalogo </a></li>
+                        
+                        <li class="footer-item"><a class="footer-link" href="#">Borrar tu catalogo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="column is-full">
+                    <div class="footer-socials">
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                        <a target="_blank" class="footer-solcials-link" href="https://www.instagram.com/u_market_hn/"><i class="zmdi zmdi-instagram"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bar-top">
+            <div class="container">
+                <a class="footer-bar-top-links" href="#">CREADRO POR: Kenneth Cáceres, Gerardo Jiménez, José Canales y Cristofer Estrada</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

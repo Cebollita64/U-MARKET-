@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>U MARKET</title>
+    <link  rel="icon"   href="img/icono-mcdonalds.png" type="image/png" />
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar-top">
+            <ul class="navbar-top-ul">
+                <li class="navbar-top-item">
+                    <a href="menu.html" class="navbar-top-links">Registro</a> 
+                </li>
+                <li class="navbar-top-item">
+                    <a href="menu.html" class="navbar-top-links">Iniciar sesión</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="#" class="navbar-top-links">
+                        <i class="zmdi zmdi-shopping-cart"></i> Carrito
+                        <!-- <i class="zmdi zmdi-chevron-down"></i> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+                <a class="navbar-mobile-link has-text-white" href="#" id="btn-mobile"><i class="zmdi zmdi-menu"></i></a>
+                <a class="navbar-mobile-link has-text-white" href="menu.html">U MARKET</a>
+                <a class="navbar-mobile-link has-text-white" href="#"><i class="zmdi zmdi-shopping-cart"></i> Vacio</a>
+            </header>
+            <nav class="nav-menu --nav-dark-light" id="mySidenav">
+                <form class="form-group " action="#">
+                    <div class="form-group-container">
+                        <span class="form-group-icon"><i class="zmdi zmdi-search"></i></span>
+                        <input type="text" class="form-group-input" placeholder="Buscar...">
+                    </div>
+                </form>
+
+                <a class="is-hidden-mobile brand is-uppercase has-text-weight-bold has-text-dark" href="menu.html">U MARKET</a>
+                <ul class="nav-menu-ul">
+                    <li class="nav-menu-item" id="men">
+                        <a class="nav-menu-link link-submenu active" href="#">Hombre <i
+                                class="zmdi zmdi-chevron-down"></i></a>
+                        <div class="container-sub-menu">
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item ">
+                                    <a class="nav-menu-link" href="#">
+                                        <strong>Casual</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a>
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Chaquetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisas Polo</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Pantalones</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisetas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item"><a class="nav-menu-link" href="#">
+                                        <strong>Formal</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a>
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Chaquetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Trajes</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Pantalones</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="ads is-hidden-touch">
+                                <h1 class="ads-h1">Ofertas de Verano</h1>
+                                <h2 class="ads-h2">Desde el 50% de descuento</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-menu-item" id="women">
+                        <a href="#" class="nav-menu-link link-submenu">Mujer <i class="zmdi zmdi-chevron-down"></i> </a>
+                        <div class="container-sub-menu">
+
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item ">
+                                    <a class="nav-menu-link" href="#">
+                                        <strong>Casual</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a>
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Chaquetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisas Polo</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Pantalones</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisetas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item"><a class="nav-menu-link" href="#">
+                                        <strong>Formal</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a>
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Chaquetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisetas</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Trajes</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Pantalones</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="ads is-hidden-touch">
+                                <h1 class="ads-h1">Ofertas de Verano</h1>
+                                <h2 class="ads-h2">Desde el 50% de descuento</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-menu-item"><a href="brand.html" class="nav-menu-link">La Marca</a></li>
+                    <li class="nav-menu-item"><a href="lookbook.html" class="nav-menu-link"></a></li>
+                    <li class="nav-menu-item"><a href="login.html" class="nav-menu-link">Registro</a></li>
+                    <li class="nav-menu-item"><a href="lookbook.html" class="nav-menu-link">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner banner-mcdonalds">
+        <div class="banner-container ">
+            <h1>Mc Donald's</h1>
+        
+        </div>
+    </div>
+ <!-- Sección de fotografías -->
+ <div class="container">
+    <div class="columns is-multiline">
+        <div class="column is-full-mobile">
+            <div class="columns is-centered is-mobile is-multiline">
+                <!-- 1 Sección de fotografías -->
+                <div class="column is-half column-full">
+                    <div class="card">
+                        <span class="price">Lps.102.99</span>
+                        <img src="img/cuartodelibraconquesodoble.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> CUARTO DE LIBRA CON
+                                 QUESO DOBLE</h4></i></b> 
+                           <i> <p class="has-text-centered">Hamburguesa con dos carnes 100% de res, mostaza, 
+                               ketchup, cebolla, pepinillos y queso.
+                                </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.96.58</span>
+                        <img src="img/mcnifica.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> McNífica</h4></i></b> 
+                            <i> <p class="has-text-centered">Pan con ajonjolí, 
+                                una torta de 100% carne de res de ¼ de libra, mayonesa,
+                                 ketchup, cebolla, lechuga, tomate y queso.
+                                </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full">
+                    <div class="card">
+                        
+                        <span class="price">Lps.157.05</span>
+                        
+                            <img src="img/mcfiesta.png" alt="">
+                        <div class="card-info">
+                            
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold">McFiesta </h4></i></b> 
+                            <i><p class="has-text-centered">Hamburguesa elaborada con carne 100% de res,
+                                 mayonesa, ketchup, cebolla, lechuga, tomate y queso.</p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Segunda sección de fotografías -->
+        <div class="column is-half is-full-mobile">
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-full">
+                    <div class="card">
+                        <span class="price">Lps.305.00</span>
+                            <img src="img/clasicagourmet.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> La Clásica Gourmet 100% De Res</h4></i></b> 
+                            <i><p class="has-text-centered">Pan artesanal, tomate, lechuga, cebolla, 
+                                queso cheddar blanco, mayonesa y torta 100% carne de res ó
+                                 pollo (Grilled ó Crispy).
+
+
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.138.13</span>
+                        <img src="img/picoguacamol.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold">Pico Guacamol Gourmet
+                            </h4></i></b> 
+                           <i> <p class="has-text-centered">
+                            Pan artesanal, queso cheddar blanco, 
+                            lechuga, pico de gallo, aderezo ranch, guacamol y 
+                            torta de carne Angus ó pollo (Grilled ó Crispy).</p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- 3 Sección de fotografías -->
+ <div class="container">
+    <div class="columns is-multiline">
+        <div class="column is-full-mobile">
+            <div class="columns is-centered is-mobile is-multiline">
+                <!-- 3 Sección de fotografías -->
+                <div class="column is-half column-full">
+                    <div class="card">
+                        <span class="price">Lps.159.05</span>
+                        <img src="img/bicmac.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> Bic Mac </h4></i></b> 
+                            <i><p class="has-text-centered">Un clásico para disfrutar. Pan con semillas de ajonjolí,
+                                 dos tortas de carne 100% de res, lechuga, queso, pepinillos, cebolla y aderezo Big Mac.
+                                </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.181.82</span>
+                        <img src="img/bicmacdoble.png" alt="">
+                        <div class="card-info">
+                           
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> Bic Mac Doble</h4></i></b> 
+                            <i><p class="has-text-centered">Un clásico para disfrutar. Pan con semillas de ajonjolí, 
+                                cuatro tortas de carne 100% de res, lechuga, queso, pepinillos, cebolla y aderezo Big Mac.
+
+
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full">
+                    <div class="card">
+                        
+                        <span class="price">Lps.165.00</span>
+                        
+                            <img src="img/cuartodelibraconqueso.png" alt="">
+                        <div class="card-info">
+                           
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> Cuarto De Libra Con Queso</h4></i></b> 
+                           <i> <p class="has-text-centered">Un clásico de McDonald’s. Hamburguesa con carne 100% de res,
+                                mostaza, ketchup, cebolla, pepinillos y queso.
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Segunda sección de fotografías -->
+        <div class="column is-half is-full-mobile">
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-full">
+                    <div class="card">
+                        <span class="price">Lps.148.00</span>
+                            <img src="img/mcnificaderes.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> McNífica De Res</h4></i></b> 
+                           <i> <p class="has-text-centered">Pan con ajonjolí, una torta de carne 100% de res,
+                                mayonesa, ketchup, cebolla, lechuga, tomate y queso.
+                           </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.117.00</span>
+                        <img src="img/quesoburguesa.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> Quesoburguesa</h4></i></b> 
+                            <i><p class="has-text-centered">Hamburguesa elaborada con carne 100% de res, 
+                                mostaza, ketchup, cebolla, pepinillos y queso.
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- 4 Sección de fotografías -->
+ <div class="container">
+    <div class="columns is-multiline">
+        <div class="column is-full-mobile">
+            <div class="columns is-centered is-mobile is-multiline">
+                <!-- 3 Sección de fotografías -->
+                <div class="column is-half column-full">
+                    <div class="card">
+                        <span class="price">Lps.133.05</span>
+                        <img src="img/quesoburguesadoble.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold">Quesoburguesa Doble </h4></i></b> 
+                            <i><p class="has-text-centered">Hamburguesa elaborada con dos tortas de carne 100% de res,
+                                 mostaza, ketchup, cebolla, pepinillos y queso.
+                                </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.147.82</span>
+                        <img src="img/mcwrap.png" alt="">
+                        <div class="card-info">
+                           
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> McWrap La Clásica Gourmet</h4></i></b> 
+                            <i><p class="has-text-centered">Tortilla de harina, tomate, lechuga, cebolla, 
+                                queso cheddar blanco y mayonesa y carne angus. Puedes elegir entre pollo grilled o pollo Crispy.
+                                 También puedes elegir el pan entre artesanal, pan blanco o tortilla de harina.
+
+
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full">
+                    <div class="card">
+                        
+                        <span class="price">Lps.85.00</span>
+                        
+                            <img src="img/mcpollo.png" alt="">
+                        <div class="card-info">
+                           
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> McMenú Pollo McCrispy 3 Pz</h4></i></b> 
+                           <i> <p class="has-text-centered">Delicioso pollo frito en piezas, sazonado 
+                               especialmente al estilo McDonald’s.
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Segunda sección de fotografías -->
+        <div class="column is-half is-full-mobile">
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-full">
+                    <div class="card">
+                        <span class="price">Lps.91.00</span>
+                            <img src="img/mcnuggets.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> McMenu McNuggets 10pz</h4></i></b> 
+                           <i> <p class="has-text-centered">Nuestros tiernos y jugosos McNuggets estan hechos 100% de pechuga de pollo sin preservantes,
+                                saborizantes ni colorantes artificiales servidos con una deliciosa salsa moztasa, agridulce ó barbacoa.
+                           </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.124.00</span>
+                        <img src="img/mcsandwitch.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold">McMenú Sandwich Pollo</h4></i></b> 
+                            <i><p class="has-text-centered">Mc Sandwich de Pollo
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- 5 Sección de fotografías -->
+ <div class="container">
+    <div class="columns is-multiline">
+        <div class="column is-full-mobile">
+            <div class="columns is-centered is-mobile is-multiline">
+                <!-- 3 Sección de fotografías -->
+                <div class="column is-half column-full">
+                    <div class="card">
+                        <span class="price">Lps.99.05</span>
+                        <img src="img/desayunohuevo.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> Desayuno Completo </h4></i></b> 
+                            <i><p class="has-text-centered">Huevos revueltos, acompañados de una torta de salchicha de cerdo, 
+                                an muffin inglés tostado con margarina y un delicioso Hashbrown.
+                                </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.72.82</span>
+                        <img src="img/mcmuffin.png" alt="">
+                        <div class="card-info">
+                           
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold">McMuffin De Tocino Y Huevo</h4></i></b> 
+                            <i><p class="has-text-centered">Pan Muffin tostado, tocino, huevo y queso.
+
+
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full">
+                    <div class="card">
+                        
+                        <span class="price">Lps.165.00</span>
+                        
+                            <img src="img/desayunodeluxe.png" alt="">
+                        <div class="card-info">
+                           
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> Desayuno Deluxe</h4></i></b> 
+                           <i> <p class="has-text-centered">Huevos revueltos, acompañados de una torta de salchicha de cerdo,
+                                Hot Cakes, pan muffin inglés tostado con margarina y un delicioso Hashbrown.
+
+
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Segunda sección de fotografías -->
+        <div class="column is-half is-full-mobile">
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-full">
+                    <div class="card">
+                        <span class="price">Lps.105.00</span>
+                            <img src="img/hotcakes.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> Hot Cakes</h4></i></b> 
+                           <i> <p class="has-text-centered">Porción de tres panqueques preparados con la inigualable 
+                               receta especial McDonald’s, servidos calientes y frescos, acompañados de miel y mantequilla.
+                           </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.112.00</span>
+                        <img src="img/burritos.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold">Burritos De Desayuno</h4></i></b> 
+                            <i><p class="has-text-centered">Deliciosa tortilla de harina, acompañada de queso americano, 
+                                una mezcla de salchicha picada, chile pimiento, cebolla, tomate y huevo revuelto.
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- 6 Sección de fotografías -->
+ <div class="container">
+    <div class="columns is-multiline">
+        <div class="column is-full-mobile">
+            <div class="columns is-centered is-mobile is-multiline">
+                <!-- 3 Sección de fotografías -->
+                <div class="column is-half column-full">
+                    <div class="card">
+                        <span class="price">Lps.25.05</span>
+                        <img src="img/sundaedefresa.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold">Sundae De Fresa </h4></i></b> 
+                            <i><p class="has-text-centered">Delicioso Sundae con topping de Fresa.
+
+
+                                </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.25.82</span>
+                        <img src="img/sundaedechocolate.png" alt="">
+                        <div class="card-info">
+                           
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> Sundae De Chocolate</h4></i></b> 
+                            <i><p class="has-text-centered">Delicioso Sundae con topping de Chocolate.
+
+
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full">
+                    <div class="card">
+                        
+                        <span class="price">Lps.30.00</span>
+                        
+                            <img src="img/pasteldequeso.png" alt="">
+                        <div class="card-info">
+                           
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> Pastel De Queso</h4></i></b> 
+                           <i> <p class="has-text-centered">Delicioso relleno de Queso, envuelto con una cubierta crujiente para darle un delicioso
+                                sabor a tu paladar, todo el tiempo calientito y listo para disfrutar.
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Segunda sección de fotografías -->
+        <div class="column is-half is-full-mobile">
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-full">
+                    <div class="card">
+                        <span class="price">Lps.35.00</span>
+                            <img src="img/Mcflurry.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold"> McFlurry Oreo</h4></i></b> 
+                           <i> <p class="has-text-centered">Suave helado de vainilla, puede disfrutarlo con Oreo.
+                           </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-full is-half">
+                    <div class="card">
+                        <span class="price">Lps.124.00</span>
+                        <img src="img/mccono.png" alt="">
+                        <div class="card-info">
+                            <b><i><h4 class="has-text-black has-text-centered has-text-weight-bold">McCono</h4></i></b> 
+                            <i><p class="has-text-centered">Disfruta de un delicioso helado de Vainilla, Chocolate ó Mixto, 
+                                a cualquier hora del día, es la mejor solución para calmar tu antojo.
+                            </p></i>
+                            <div class="card-buttons">
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-shopping-cart"></i></a>
+                                <a href="#" class="btn btn--mini-rounded"><i
+                                        class="zmdi zmdi-favorite-outline"></i></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container container-full">
+<div class="columns is-centered is-multiline">
+    <div class="column is-full">
+        <div class="separator"></div>
+
+   
+            
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Información</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">La marca</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Local stores</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Servicios </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Porqué comprar</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Envios y retornos</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Envios seguros</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Testimonios </a></li>
+                       
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Tu cuenta</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Iniciar sesión</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Registro</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver carrito </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver catálogo</a></li>
+                      
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Catalogo</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para hombres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para mujeres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver tu Catalogo </a></li>
+                        
+                        <li class="footer-item"><a class="footer-link" href="#">Borrar tu catalogo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="column is-full">
+                    <div class="footer-socials">
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                        <a target="_blank" class="footer-solcials-link" href="https://www.instagram.com/u_market_hn/"><i class="zmdi zmdi-instagram"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bar-top">
+            <div class="container">
+                <a class="footer-bar-top-links" href="#">CREADRO POR: Kenneth Cáceres, Gerardo Jiménez, José Canales y Cristofer Estrada</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
